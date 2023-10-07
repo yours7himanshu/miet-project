@@ -49,6 +49,7 @@ html,body{
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
     border-radius: 3px;
+    
 }
 .right ul .active{
     padding:10px 20px;
@@ -149,6 +150,7 @@ color:lightgray;
     font-weight: 500;
     border: none;
     border-radius: 4px;
+    cursor: pointer;
 }
 .hero-section .left-section .button2{
     margin-left:35px;
@@ -160,6 +162,7 @@ color:lightgray;
    font-weight: 500;
    border: none;
    border-radius: 4px;
+   cursor:pointer
 }
 .hero-section .image-section{
     width: 50vw;
