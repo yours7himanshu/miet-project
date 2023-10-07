@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    width:100%;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: #18181b;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    width: 100vw;
+    height: 60px;
+    color: white;
+}
+.left{
+    display: flex;
+   color: lightgray;
+   text-shadow: 2px;
+   font-family: 'Rubik', sans-serif;
+ 
+}
+.left span{
+    display: inline-block;
+    color:#f43f5e;
+    font-size: 2em;
+     font-weight: bolder;
+}
+
+
+.right ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    font-weight: 500;
+}
+
+
+.right ul li{
+    list-style: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 3px;
+}
+.right ul .active{
+    padding:10px 20px;
+    
+}
+.right ul .dinner{
+    padding:10px 15px;
+}
+.right ul li:hover{
+    background-color: #27272a;
+    color: white;
+    transition: 0.5s;
+    animation-delay: 0.5s;
+}
+
+.right ul span{
+    display: inline-block;
+}
+.right ul input{
+    height: 30px;
+    width: 200px;
+    padding: 10px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border: none;
+    outline: none;
+}
+.right ul button{
+    height: 30px;
+    width: 110px;
+    padding:5px;
+    background-color: #e11d48;
+    color: white;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.right ul button:hover{
+    background-color: #f43f5e;
+    transition:0.5s;
+    delay:0.5s;
+}
+
+
+.hero-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    height: 90vh;
+}
+.hero-section .left-section{
+    width: 50vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    margin:20px;
+
+    justify-content: center;
+
+}
+.hero-section .left-section h1{
+    font-size: 70px;
+    margin-left: 35px;
+   font-family: 'Rubik', sans-serif;
+   color:lightgray;
+
+}
+.hero-section .left-section span{
+    font-size: 70px;
+    margin-left: 35px;
+   font-family: 'Rubik', sans-serif;
+   color:#f43f5e;
+   display: inline-block;
+}
+.hero-section .left-section p{
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-left: 35px;
+    margin-right: 0px;
+color:lightgray;
+    text-align:start;
+}
+.hero-section .left-section .buttons{
+    display: flex;
+    height: 60px;
+    width: 400px ;
+}
+.hero-section .left-section .button1{
+    margin-left:35px;
+    height: 50px;
+    width: 120px;
+    padding:10px ;
+    background-color: #f43f5e;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+}
+.hero-section .left-section .button2{
+    margin-left:35px;
+    height: 50px;
+    width: 120px;
+    padding:10px ;
+   background-color: lightgray;
+   font-size: 15px;
+   font-weight: 500;
+   border: none;
+   border-radius: 4px;
+}
+.hero-section .image-section{
+    width: 50vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.hero-section .image-section img{
+    height: 80vh;
+    width: 40vw;
+    margin:20px
+}
