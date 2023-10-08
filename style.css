@@ -93,6 +93,76 @@ html,body{
     transition:0.5s;
     delay:0.5s;
 }
+.recipe-container{
+    height: 50px;
+    width:100vw;
+    margin-bottom:10px;
+    padding:5px;
+    text-align: center;
+    background-color:  #27272a;
+    color:yellow;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+.hero-section1{
+    display: none ;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   height: 100vh;
+   width: 100vw;
+   margin:10px;
+}
+/* CSS Styles for Recipe Cards */
+.recipe {
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    width: 200px; /* Adjust the width as needed */
+    text-align: center;
+    height: auto;
+    overflow: hidden;
+}
+.recipe .view-recipe{
+    height:40px;
+    background-color: #e11d48;
+    color:white;
+    border: none;
+    border-radius: 3px;
+    outline:none;
+    cursor: pointer;
+
+}
+.recipe .view-recipe:hover{
+    background-color: #f43f5e;
+}
+.recipe h3{
+    color: #6d28d9;
+    font-size: 17px;
+    font-weight: 600;
+}
+.recipe p{
+    font-size: 12px;
+    color: #4a4a4a;
+}
+.recipe span{
+    font-weight: 600;
+}
+
+.recipe img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+
 
 
 .hero-section{
@@ -100,7 +170,7 @@ html,body{
     justify-content: space-evenly;
     align-items: center;
     gap: 30px;
-    height: 90vh;
+    height: 80vh;
 }
 .hero-section .left-section{
     width: 50vw;
