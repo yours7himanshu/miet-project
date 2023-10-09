@@ -49,3 +49,17 @@ searchBtn.addEventListener('click', (e) => {
     const searchInput = searchBox.value.trim();
     fetchRecipes(searchInput);
 });
+
+
+// Hamburger
+const navMenu = document.querySelector(".nav-menu");
+const closeMenu = document.querySelector(".close-menu");
+const openMenu = document.querySelector(".open-menu");
+
+openMenu.addEventListener('click',()=>{
+    navMenu.style.display = "flex";
+    navMenu.style.top = "0";
+});
+closeMenu.addEventListener('click',()=>{
+    navMenu.style.top = "-100%";
+});

@@ -34,7 +34,7 @@ html,body{
 }
 
 
-.right ul{
+.right .nav-menu{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -93,6 +93,18 @@ html,body{
     transition:0.5s;
     delay:0.5s;
 }
+ .right .open-menu{
+    font-size:2rem;
+    margin:20px;
+    display: none;
+    cursor:pointer;
+}
+.right .nav-menu .close-menu{
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
 .recipe-container{
     height: 50px;
     width:100vw;
@@ -249,6 +261,36 @@ color:lightgray;
 }
 
 @media(max-width:900px){
+   
+   .right .nav-menu{
+    height: 100vh;
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    transition: top 1s ease;
+    display: none;
+   }
+.right .nav-menu .close-menu{
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.right .open-menu{
+    display: block;
+}
+
+.right .nav-menu li:hover{
+    background:none;
+    color: #27272a;
+    font-size: 1.6rem;
+}
     .recipe-container{
         font-size: 10px;
        height: 40px;
