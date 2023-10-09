@@ -38,7 +38,7 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    gap: 20px;
+    gap: 10px;
     font-weight: 500;
 }
 
@@ -50,6 +50,10 @@ html,body{
     font-family: 'Poppins', sans-serif;
     border-radius: 3px;
     
+}
+a{
+    text-decoration: none;
+    color:white;
 }
 .right ul .active{
     padding:10px 20px;
@@ -65,22 +69,12 @@ html,body{
     animation-delay: 0.5s;
 }
 
-.right ul span{
-    display: inline-block;
-}
-.right ul input{
+
+ #search button{
     height: 30px;
-    width: 200px;
-    padding: 10px;
-    border-top-left-radius: 2px;
-    border-bottom-left-radius: 2px;
-    border: none;
-    outline: none;
-}
-.right ul button{
-    height: 30px;
-    width: 110px;
+    width: 140px;
     padding:5px;
+    border-radius: 3px;
     background-color: #e11d48;
     color: white;
     font-weight: 700;
@@ -88,11 +82,25 @@ html,body{
     border: none;
     cursor: pointer;
 }
-.right ul button:hover{
+ #search button:hover{
     background-color: #f43f5e;
     transition:0.5s;
     delay:0.5s;
 }
+
+ #search span{
+    display: inline-block;
+}
+ #search input{
+    height: 30px;
+    width: 400px;
+    padding: 10px;
+   
+    border-radius: 3px;
+    border: none;
+    outline: none;
+}
+
  .right .open-menu{
     font-size:2rem;
     margin:20px;
@@ -262,6 +270,13 @@ color:lightgray;
 
 @media(max-width:900px){
    
+
+    .left h1{
+        display: none;
+    }
+    .left span{
+        display: none;
+    }
    .right .nav-menu{
     height: 100vh;
     position: fixed;
@@ -291,6 +306,31 @@ color:lightgray;
     color: #27272a;
     font-size: 1.6rem;
 }
+
+#search button{
+    height: 35px;
+    width: 80px;
+    padding:5px;
+   
+}
+ #search button:hover{
+    background-color: #f43f5e;
+    transition:0.5s;
+    delay:0.5s;
+}
+
+ #search span{
+    display: inline-block;
+}
+ #search input{
+    height: 35px;
+    width: 200px;
+    
+}
+
+
+
+
     .recipe-container{
         font-size: 10px;
        height: 40px;
