@@ -38,7 +38,7 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    gap: 10px;
+    gap: 5px;
     font-weight: 500;
 }
 
@@ -103,7 +103,7 @@ a{
 
  .right .open-menu{
     font-size:2rem;
-    margin:20px;
+    margin:5px;
     display: none;
     cursor:pointer;
 }
