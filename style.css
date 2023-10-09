@@ -247,3 +247,86 @@ color:lightgray;
     width: 40vw;
     margin:20px
 }
+
+@media(max-width:900px){
+    .recipe-container{
+        font-size: 10px;
+       height: 40px;
+    }
+    .hero-section{
+        flex-direction: column-reverse;
+        align-items: space-evenly;
+        justify-content: space-evenly;
+        margin: 10px;
+        gap: 20px;
+       
+    }
+    .hero-section .image-section{
+        width: 90vw;
+        height: 50vh;
+        display: flex;
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: space-evenly;
+        justify-content: center;
+    
+    }
+    .hero-section .image-section img{
+        height: 40vh;
+        width: 90vw;
+        margin-top:20px;
+    }
+    .hero-section .left-section{
+        width: 90vw;
+        height: 60vh;
+        margin:5px;
+
+    }
+
+    .hero-section .left-section h1{
+        font-size: 35px;
+        margin-left: 15px;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: 35px;
+      
+    }
+
+
+    
+    .hero-section .left-section span{
+        
+        font-size: 37px;
+        margin-left: 35px;
+        
+      
+    }
+    .hero-section .left-section p{
+        margin-top:10px;
+        margin-bottom:10px;
+        margin-left: 35px;
+        margin-right: 0px;
+    color:lightgray;
+    font-size: 14px;
+        text-align:start;
+        width: 80vw;
+    }
+    .hero-section .left-section .buttons{
+       margin-top:10px;
+      
+    }
+    .hero-section .left-section .button1{
+        
+        height: 40px;
+        width: 100px;
+        padding:5px ;
+       font-size: 14px;
+    }
+    .hero-section .left-section .button2{
+       
+        height: 40px;
+        width: 100px;
+        padding:5px ;
+       font-size: 14px;
+      
+}
