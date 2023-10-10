@@ -676,7 +676,9 @@ color:lightgray;
     height: 50vh;
     background: linear-gradient(45deg, #272727, #1a1a1a);
     margin: 10px;
-    border-radius: 4px;
+    border-radius: 7px;
+    padding: 20px;
+    padding-top:30px;
    
  }
 
@@ -709,7 +711,7 @@ color:lightgray;
     height: 50px;
    
    width: 50%;
-    background-color: #f43f5e;
+    background-color: #7c3aed;
     color: white;
     font-size: 15px;
     font-weight: 500;
@@ -750,7 +752,7 @@ color:lightgray;
     height: 50px;
    
    width: 50%;
-    background-color: #f43f5e;
+    background-color: #7c3aed;
     color: white;
     font-size: 15px;
     font-weight: 500;
@@ -792,7 +794,7 @@ color:lightgray;
     height: 50px;
    
    width: 50%;
-    background-color: #f43f5e;
+    background-color: #7c3aed;
     color: white;
     font-size: 15px;
     font-weight: 500;
@@ -834,7 +836,8 @@ color:lightgray;
     height: 50px;
    
    width: 50%;
-    background-color: #f43f5e;
+    background-color: #7c3aed;
+    transition:color 1s ease-in;
     color: white;
     font-size: 15px;
     font-weight: 500;
