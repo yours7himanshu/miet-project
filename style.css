@@ -187,9 +187,8 @@ a{
 
 .hero-section{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    gap: 30px;
     height: 80vh;
 }
 .hero-section .left-section{
@@ -266,6 +265,252 @@ color:lightgray;
     height: 80vh;
     width: 40vw;
     margin:20px
+}
+.featured-recipe{
+    height:90vh;
+    width:100vw;
+    margin-top:20px;
+
+}
+.featured-recipe h1{
+    color: yellow;
+    font-size: 40px;
+    font-family: 'Poppins',sans-serif;
+    margin:20px 50px;
+}
+
+
+.featured-recipe .card-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  
+}
+.featured-recipe .card-section .card {
+    width: 20vw;
+    height: 70vh;
+    background-color: #27272a;
+    margin: 20px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+ }
+ 
+ #card1 {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 20px;
+     margin: 10px;
+     gap:5px;
+
+   
+ }
+ 
+ #card1 img {
+     height: 70%;
+     width: 100%;
+     object-fit: cover;
+     object-position: center;
+     border-radius: 5px;
+ }
+ 
+ #card1 h3 {
+     color: yellow;
+     font-size: 20px;
+     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+     margin:8px;
+ }
+ 
+ #card1 p {
+     color: lightgray;
+     font-size: 13px;
+     margin: 2px;
+     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+     text-align: center;
+ }
+ 
+ #card1 button {
+     height: 35px;
+     width: 90px;
+    width: 100%;
+     background-color: #f43f5e;
+     color: white;
+     font-size: 15px;
+     font-weight: 500;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+ }
+ 
+ #card1 button:hover {
+     background-color: #ff4f6d;
+ }
+ /* Styling for card 2 */
+
+ #card2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+    gap:5px;
+
+  
+}
+
+#card2 img {
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
+
+#card2 h3 {
+    color: yellow;
+    margin:8px;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#card2 p {
+    color: lightgray;
+    font-size: 13px;
+    margin: 2px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#card2 button {
+    height: 35px;
+    width: 90px;
+   width: 100%;
+    background-color: #f43f5e;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#card2 button:hover {
+    background-color: #ff4f6d;
+}
+
+/* Styling for card3 */
+
+
+#card3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+    gap:5px;
+
+  
+}
+
+#card3 img {
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
+
+#card3 h3 {
+    color: yellow;
+    margin: 8px;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#card3 p {
+    color: lightgray;
+    font-size: 13px;
+    margin: 2px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#card3 button {
+    height: 35px;
+    width: 90px;
+   width: 100%;
+    background-color: #f43f5e;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#card3 button:hover {
+    background-color: #ff4f6d;
+}
+
+/* Styling for card 4 */
+
+#card4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+    gap:5px;
+
+  
+}
+
+#card4 img {
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
+
+#card4 h3 {
+    color: yellow;
+    margin: 8px;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#card4 p {
+    color: lightgray;
+    font-size: 13px;
+    margin: 2px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#card4 button {
+    height: 35px;
+    width: 90px;
+   width: 100%;
+    background-color: #f43f5e;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#card4 button:hover {
+    background-color: #ff4f6d;
 }
 
 @media(max-width:900px){
@@ -411,4 +656,185 @@ color:lightgray;
         padding:5px ;
        font-size: 14px;
       
+}
+.featured-recipe h1{
+   
+    font-size: 25px;
+ 
+    margin:10px 50px;
+}
+.featured-recipe .card-section{
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  
+}
+.featured-recipe .card-section .card {
+    width: 90vw;
+    height: 40vh;
+    background: linear-gradient(45deg, #272727, #1a1a1a);
+    margin: 10px;
+    border-radius: 4px;
+   
+ }
+
+ #card1 { 
+    padding: 10px;
+    margin: 2px;
+ 
+}
+#card1 img {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+}
+#card1 h3 {
+    color: yellow;
+    font-size: 16px;
+    margin:2px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+}
+#card1 p {
+    color: lightgray;
+    font-size: 12px;
+   margin: 1px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#card1 button {
+    height: 40px;
+   
+   width: 100%;
+    background-color: #f43f5e;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+/* Styling card 2 */
+
+#card2 { 
+    padding: 10px;
+    margin: 2px;
+ 
+}
+#card2 img {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+}
+#card2 h3 {
+    color: yellow;
+    font-size: 16px;
+    margin:2px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+}
+#card2 p {
+    color: lightgray;
+    font-size: 12px;
+   margin: 1px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#card2 button {
+    height: 40px;
+   
+   width: 100%;
+    background-color: #f43f5e;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+/* Styling for card 3 */
+
+#card3 { 
+    padding: 10px;
+    margin: 2px;
+ 
+}
+#card3 img {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+}
+#card3 h3 {
+    color: yellow;
+    font-size: 16px;
+    margin:2px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+}
+#card3 p {
+    color: lightgray;
+    font-size: 12px;
+   margin: 1px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#card3 button {
+    height: 40px;
+   
+   width: 100%;
+    background-color: #f43f5e;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#card4 { 
+    padding: 10px;
+    margin: 2px;
+ 
+}
+#card4 img {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+}
+#card4 h3 {
+    color: yellow;
+    font-size: 16px;
+    margin:2px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+}
+#card4 p {
+    color: lightgray;
+    font-size: 12px;
+   margin: 1px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#card4 button {
+    height: 40px;
+   
+   width: 100%;
+    background-color: #f43f5e;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 }
