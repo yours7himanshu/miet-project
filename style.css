@@ -686,7 +686,7 @@ color:lightgray;
  
 }
 #card1 img {
-    height: 100%;
+    height: 75%;
     width: 100%;
     border-radius: 8px;
 }
@@ -726,7 +726,7 @@ color:lightgray;
  
 }
 #card2 img {
-    height: 100%;
+    height: 75%;
     width: 100%;
     border-radius: 8px;
 }
@@ -766,7 +766,7 @@ color:lightgray;
  
 }
 #card3 img {
-    height: 100%;
+    height: 75%;
     width: 100%;
     border-radius: 8px;
 }
@@ -805,8 +805,9 @@ color:lightgray;
  
 }
 #card4 img {
-    height: 100%;
+    height: 75%;
     width: 100%;
+    
     border-radius: 8px;
 }
 #card4 h3 {
