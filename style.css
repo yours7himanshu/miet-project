@@ -673,7 +673,7 @@ color:lightgray;
 }
 .featured-recipe .card-section .card {
     width: 90vw;
-    height: 45vh;
+    height: 50vh;
     background: linear-gradient(45deg, #272727, #1a1a1a);
     margin: 10px;
     border-radius: 4px;
@@ -706,7 +706,7 @@ color:lightgray;
 }
 
 #card1 button {
-    height: 50px;
+    height: 55px;
    
    width: 100%;
     background-color: #f43f5e;
@@ -746,7 +746,7 @@ color:lightgray;
 }
 
 #card2 button {
-    height: 50px;
+    height: 55px;
    
    width: 100%;
     background-color: #f43f5e;
@@ -786,7 +786,7 @@ color:lightgray;
 }
 
 #card3 button {
-    height: 50px;
+    height: 55px;
    
    width: 100%;
     background-color: #f43f5e;
@@ -826,7 +826,7 @@ color:lightgray;
 }
 
 #card4 button {
-    height: 45px;
+    height: 55px;
    
    width: 100%;
     background-color: #f43f5e;
