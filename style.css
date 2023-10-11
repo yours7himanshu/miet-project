@@ -196,7 +196,7 @@ a{
     height: 80vh;
     display: flex;
     flex-direction: column;
-    margin:20px;
+     margin-left: 30px;
 
     justify-content: center;
 
@@ -222,6 +222,8 @@ a{
     margin-right: 0px;
 color:lightgray;
     text-align:start;
+    height: 100px;
+    width: 600px;
 }
 .hero-section .left-section .buttons{
     display: flex;
@@ -264,7 +266,8 @@ color:lightgray;
 .hero-section .image-section img{
     height: 80vh;
     width: 40vw;
-    margin:20px
+    margin:20px;
+     border-radius: 20px;
 }
 .featured-recipe{
     height:90vh;
@@ -293,6 +296,7 @@ color:lightgray;
     margin: 20px;
     border-radius: 7px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-bottom: 3px solid lime;
  }
  
  #card1 {
@@ -302,9 +306,17 @@ color:lightgray;
      align-items: center;
      padding: 20px;
      margin: 10px;
+     cursor:pointer;
      gap:5px;
+     transition: 0.4s ease-in-out;
+
 
    
+ }
+ #card1:hover{
+    width:21vw;
+    height: 71vh;
+    background-color: #4a4a4a;
  }
  
  #card1 img {
@@ -341,7 +353,7 @@ color:lightgray;
      border: none;
      border-radius: 4px;
      cursor: pointer;
-     transition: background-color 0.3s ease;
+    
  }
  
  #card1 button:hover {
@@ -357,8 +369,14 @@ color:lightgray;
     padding: 20px;
     margin: 10px;
     gap:5px;
-
+    transition: 0.4s ease-in-out;
+    cursor:pointer;
   
+}
+#card2:hover{
+    height: 71vh;
+    width: 21vw;
+    background-color: #4a4a4a;
 }
 
 #card2 img {
@@ -413,9 +431,16 @@ color:lightgray;
     padding: 20px;
     margin: 10px;
     gap:5px;
-
-  
+   transition: 0.4s ease-in-out;
+   cursor: pointer;
+   
 }
+#card3:hover{
+    height: 71vh;
+    width: 21vw;
+    background-color: #4a4a4a;
+}
+
 
 #card3 img {
     height: 70%;
@@ -468,8 +493,15 @@ color:lightgray;
     padding: 20px;
     margin: 10px;
     gap:5px;
+cursor:pointer;
+transition: 0.4 ease-in-out;
 
   
+}
+#card4:hover{
+    height: 71vh;
+    width: 21vw;
+    background-color: #4a4a4a;
 }
 
 #card4 img {
@@ -512,6 +544,14 @@ color:lightgray;
 #card4 button:hover {
     background-color: #ff4f6d;
 }
+
+.cooking-tips{
+    height: 90vh;
+    width: 100vw;
+}
+
+
+
 
 @media(max-width:900px){
    
