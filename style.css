@@ -18,6 +18,8 @@ html,body{
     width: 100vw;
     height: 60px;
     color: white;
+  position: sticky;
+  z-index:99;
 }
 .left{
     display: flex;
@@ -114,16 +116,15 @@ a{
 }
 
 .recipe-container{
-    height: 50px;
+    height: 40px;
     width:100vw;
     margin-bottom:10px;
     padding:5px;
     text-align: center;
-  
     color:yellow;
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
-   
+
 }
 
 .hero-section1{
@@ -203,6 +204,7 @@ a{
 }
 .hero-section .left-section h1{
     font-size: 70px;
+    font-weight: 400;
     margin-left: 35px;
    font-family: 'Rubik', sans-serif;
    color:lightgray;
@@ -211,6 +213,7 @@ a{
 .hero-section .left-section span{
     font-size: 70px;
     margin-left: 35px;
+    font-weight: 400;
    font-family: 'Rubik', sans-serif;
    color:#f43f5e;
    display: inline-block;
@@ -587,6 +590,23 @@ width: 50%;
 }
 
 
+
+footer {
+    background-color: #272727;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+}
 
 @media(max-width:900px){
    

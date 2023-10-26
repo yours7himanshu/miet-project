@@ -8,7 +8,8 @@ const recipeContainer = document.querySelector('.recipe-container');
 const main = document.querySelector('#main');
 const heroSection = document.querySelector('.hero-section1');
 const featuredRecip = document.querySelector("#featured-recipe");
-
+const services = document.querySelector("#services");
+const footer = document.querySelector("#footer")
 
 // Function to get recipes
 const fetchRecipes = async (query) => {
@@ -16,6 +17,7 @@ const fetchRecipes = async (query) => {
     recipeContainer.innerHTML = "<h2>Fetching Recipies.......</h2>"
    recipeContainer.style.color = "#4ade80";
    heroSection.innerHTML = "";
+  
     const data = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${encodedQuery}`);
     const response = await data.json();
 
@@ -42,7 +44,9 @@ const fetchRecipes = async (query) => {
         heroSection.style.display = "flex";
         heroSection.appendChild(recipeDiv);
         main.style.display = "none";
+        services.style.display = "none";
         featuredRecip.style.display = "none";
+        footer.style.display = "none";
     });
 }
 
