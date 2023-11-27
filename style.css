@@ -13,7 +13,8 @@ html,body{
 .navbar{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+
     background-color: black;
     width: 100vw;
     height: 60px;
@@ -26,6 +27,7 @@ html,body{
    color: lightgray;
    text-shadow: 2px;
    font-family: 'Rubik', sans-serif;
+   margin:0px 30px;
  
 }
 .left span{
@@ -33,15 +35,19 @@ html,body{
     color:#f43f5e;
     font-size: 2em;
      font-weight: bolder;
+     
 }
 
-
+.right{
+    margin:0px 20px;
+}
 .right .nav-menu{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     gap: 5px;
     font-weight: 500;
+
 }
 
 
@@ -70,7 +76,9 @@ a{
     transition: 0.5s;
     animation-delay: 0.5s;
 }
-
+#search{
+    
+}
 
  #search button{
     height: 30px;
@@ -150,6 +158,8 @@ a{
     text-align: center;
     height: auto;
     overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
 }
 .recipe .view-recipe{
     height:40px;
@@ -183,9 +193,76 @@ a{
     border-radius: 4px;
 }
 
+.recipe-detail{
+    display: none;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: #1c1917;
+    -webkit-transform: translate(-50%,-50%);
+    border-radius:12px;
+    height:60%;
+    width:60%;
+    font-size:20px;
+    transition: all 0.5s ease-in-out;
+    overflow-y: scroll;
+    z-index: 99;
+}
+.instruction{
+    color:#10b981;
+}
+.recipe-details-content{
+    padding:30px;
 
-
-
+}
+.recipeName{
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color:orange
+}
+.recipeSubName{
+    color:#06b6d4
+}
+.ingredientList li{
+    margin-top: 5px;
+    margin-left:20px;
+    color:white;
+}
+.recipeInstruction{
+    line-height: 30px;
+    white-space: pre-line;
+    color:white;
+}
+.recipe-close-btn{
+    border:none;
+    font-size: 18px;
+    padding:10px;
+    border-radius:4px;
+    background-color:#f44336;
+    color:white;
+    position:absolute;
+    top:20px;
+    right:20px;
+    width: 30px;
+    height: 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.recipe-details::-webkit-scrollbar{
+    width:10px;
+}
+.recipe-details::-webkit-scrollbar-thumb{
+    background:#b5b5ba;
+    border-radius:16px;
+    --webkit-border-radius:16px;
+}
+.recipe:hover{
+    transform:scale(1.02)
+}
 .hero-section{
     display: flex;
     justify-content: center;

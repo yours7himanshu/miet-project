@@ -9,12 +9,16 @@ const main = document.querySelector('#main');
 const heroSection = document.querySelector('.hero-section1');
 const featuredRecip = document.querySelector("#featured-recipe");
 const services = document.querySelector("#services");
-const footer = document.querySelector("#footer")
+const footer = document.querySelector("#footer");
+const recipeDetailsContent = document.querySelector('.recipe-details-content');
+const recipeCloseBtn = document.querySelector(".recipe-close-btn");
 
 // Function to get recipes
 const fetchRecipes = async (query) => {
     const encodedQuery = encodeURIComponent(query);
     recipeContainer.innerHTML = "<h2>Fetching Recipies.......</h2>"
+    try {
+
    recipeContainer.style.color = "#4ade80";
    heroSection.innerHTML = "";
   
@@ -39,7 +43,10 @@ const fetchRecipes = async (query) => {
         button.textContent = "View Recipe";
         recipeDiv.appendChild(button);
 
-
+// Adding Event listner to the recipe button
+button.addEventListener("click",()=>{
+    openRecipePopup(meal);
+});
 
         heroSection.style.display = "flex";
         heroSection.appendChild(recipeDiv);
@@ -48,11 +55,62 @@ const fetchRecipes = async (query) => {
         featuredRecip.style.display = "none";
         footer.style.display = "none";
     });
+} catch (error) {
+    recipeContainer.innerHTML = "<h2>Recipe Not found try searching any other recipe.....</h2>"
+    recipeContainer.style.color = "orange";
+    heroSection.innerHTML = "";
 }
+}
+
+
+// fucntion to fetch ingredients and me
+const fetchIngredients = (meal)=>{
+    let ingredientsList = "";
+    for(let i=1;i<=20;i++){
+        const ingredient = meal[`strIngredient${i}`];
+        if(ingredient){
+            const measure = meal[`strMeasure${i}`];
+            ingredientsList += `<li>${measure} ${ingredient}</li>`
+        }
+        else{
+            break;
+        }
+    }
+return ingredientsList;
+}
+
+
+const openRecipePopup = (meal)=>{
+    recipeDetailsContent.innerHTML = `
+    <h2 class="recipeName">${meal.strMeal}</h2>
+    <h3 class="recipeSubName">Ingredients:</h3>
+    <ul class="ingredientList">
+    <li>
+    ${fetchIngredients(meal)}
+    </li>
+    </ul>
+    <div class="recipeInstruction">
+    <h3 class="instruction">Instructions:</h3>
+    <p>${meal.strInstructions}</p>
+    </div>`
+
+    recipeDetailsContent.parentElement.style.display= "block"
+}
+
+
+recipeCloseBtn.addEventListener("click",()=>{
+recipeDetailsContent.parentElement.style.display = "none";
+});
+
+
 
 searchBtn.addEventListener('click', (e) => {
     e.preventDefault();
     const searchInput = searchBox.value.trim();
+    if(!searchInput){
+        recipeContainer.innerHTML =`<h2>Type the meal in the search box</h2>`
+        return;
+    }
     fetchRecipes(searchInput);
 });
 
