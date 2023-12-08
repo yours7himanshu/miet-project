@@ -685,7 +685,7 @@ footer {
     font-size: 14px;
 }
 
-@media(max-width:915px){
+@media(max-width:920px){
    
 
     .left h1{
@@ -724,6 +724,14 @@ footer {
     font-size: 1.6rem;
 }
 
+#search{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+    margin:2px;
+}
 #search button{
     height: 35px;
     width: 60px;
@@ -1142,6 +1150,13 @@ p {
     height: 20px;
 }
 .recipe{
-    height:39%;
+    height:fit-content;
+}
+.recipe-detail{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width:90vw;
+    height:100vh;
 }
 }
