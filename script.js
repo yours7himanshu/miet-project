@@ -1,7 +1,5 @@
 const searchBtn = document.querySelector('.searchbtn');
-searchBtn.addEventListener('click', () => {
-    searchBtn.style.border = "2px solid lightblue"; // Corrected the variable name
-});
+
 
 const searchBox = document.querySelector('.searchbox');
 const recipeContainer = document.querySelector('.recipe-container');
@@ -17,14 +15,18 @@ const recipeCloseBtn = document.querySelector(".recipe-close-btn");
 const fetchRecipes = async (query) => {
     const encodedQuery = encodeURIComponent(query);
     recipeContainer.innerHTML = "<h2>Fetching Recipies.......</h2>"
+
+    
     try {
 
    recipeContainer.style.color = "#4ade80";
    heroSection.innerHTML = "";
+
   
     const data = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${encodedQuery}`);
+    recipeContainer.innerHTML = "";
     const response = await data.json();
-
+   
 
     recipeContainer.style.display = "";
     response.meals.forEach(meal => {
@@ -126,4 +128,9 @@ openMenu.addEventListener('click',()=>{
 });
 closeMenu.addEventListener('click',()=>{
     navMenu.style.top = "-100%";
+});
+searchBtn.addEventListener('click', () => {
+  
+
+    searchBtn.style.border = "2px solid lightblue"; // Corrected the variable name
 });
