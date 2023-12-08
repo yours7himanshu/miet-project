@@ -766,6 +766,7 @@ footer {
         justify-content: space-evenly;
         margin: 10px;
         gap: 20px;
+        margin-bottom:20px;
        
     }
     .hero-section .image-section{
@@ -1157,6 +1158,6 @@ p {
     align-content: center;
     justify-content: center;
     width:90vw;
-    height:100vh;
+    height:90vh;
 }
 }
