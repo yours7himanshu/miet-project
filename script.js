@@ -106,6 +106,8 @@ const openRecipePopup = (meal)=>{
 
 recipeCloseBtn.addEventListener("click",()=>{
 recipeDetailsContent.parentElement.style.display = "none";
+heroSection.style.filter = " blur(0px)";
+
 });
 
 
