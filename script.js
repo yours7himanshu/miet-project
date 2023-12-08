@@ -96,7 +96,7 @@ const openRecipePopup = (meal)=>{
     <p>${meal.strInstructions}</p>
     </div>`
 
-    recipeDetailsContent.parentElement.style.display= "block"
+    recipeDetailsContent.parentElement.style.display= "flex"
 }
 
 
