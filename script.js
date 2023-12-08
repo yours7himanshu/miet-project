@@ -11,6 +11,8 @@ const footer = document.querySelector("#footer");
 const recipeDetailsContent = document.querySelector('.recipe-details-content');
 const recipeCloseBtn = document.querySelector(".recipe-close-btn");
 
+
+
 // Function to get recipes
 const fetchRecipes = async (query) => {
     const encodedQuery = encodeURIComponent(query);
@@ -48,6 +50,8 @@ const fetchRecipes = async (query) => {
 // Adding Event listner to the recipe button
 button.addEventListener("click",()=>{
     openRecipePopup(meal);
+    heroSection.style.filter = " blur(5px)";
+
 });
 
         heroSection.style.display = "flex";
@@ -134,3 +138,4 @@ searchBtn.addEventListener('click', () => {
 
     searchBtn.style.border = "2px solid lightblue"; // Corrected the variable name
 });
+
